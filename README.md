@@ -4,18 +4,19 @@ Code repository for the research paper entitled "Distributed Training of U-Net A
 
 Example of both, python training scripts and bash scripts for launching the jobs, used in the manuscript can be found in the src/ folder, where the structure is as follow:
 
-└── src
-    ├── bash_scripts
-    │   ├── launch_ddp_amp.sh
-    │   ├── launch_ddp_compile.sh
-    │   ├── launch_ddp.sh
-    │   └── launch_ddp_workers_benchmark.sh
-    └── python_scripts
-        ├── train_ddp_amp.py
-        ├── train_ddp_compile.py
-        ├── train_ddp.py
-        └── train_ddp_workers_benchmark.py
-
+```
+src/
+├── bash_scripts/                  # Shell scripts to launch distributed jobs
+│   ├── launch_ddp_amp.sh
+│   ├── launch_ddp_compile.sh
+│   ├── launch_ddp.sh
+│   └── launch_ddp_workers_benchmark.sh
+└── python_scripts/               # Training entrypoints
+    ├── train_ddp_amp.py
+    ├── train_ddp_compile.py
+    ├── train_ddp.py
+    └── train_ddp_workers_benchmark.py
+```
 
 
 ABSTRACT
