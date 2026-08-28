@@ -16,8 +16,8 @@ from torchmetrics.functional.image import structural_similarity_index_measure
 os.environ.setdefault("HDF5_USE_FILE_LOCKING", "FALSE")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "unet_testing"))
-from dataset import CFDDataset  # noqa: E402
-from model import UNet  # noqa: E402
+from dataset import CFDDataset  
+from model import UNet  
 
 OUTPUT_CHANNELS = [0, 1, 2, 3]
 N_BLOCKS = 3
