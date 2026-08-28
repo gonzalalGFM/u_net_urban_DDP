@@ -18,8 +18,8 @@ from torchmetrics.functional.image import structural_similarity_index_measure
 # Import model & dataset from the existing unet_testing module
 # ---------------------------------------------------------------------------
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "unet_testing"))
-from model   import UNet          # noqa: E402
-from dataset import CFDDataset    # noqa: E402
+from model   import UNet          
+from dataset import CFDDataset    
 
 # ===========================================================================
 # Fixed configuration  (only --lr / --base-channels / --batch-size are tunable)
