@@ -19,6 +19,8 @@ src/
 ```
 
 
-ABSTRACT
+# ABSTRACT
+Computational fluid dynamics (CFD) is essential for analyzing urban aerodynamic flows and pollutant dispersion, yet its high computational cost limits practical deployment in operational and real-time applications. This paper presents a comprehensive methodology for developing a data-driven surrogate model to predict wind-driven odor dispersion in complex urban environments. We introduce an end-to-end pipeline that integrates physical domain digitalization, RANS-based CFD simulations, and systematic training-pipeline optimization on high-performance computing (HPC) infrastructure. Raw CFD outputs are interpolated onto structured 3D grids and decomposed into 2D horizontal slices, yielding a structured dataset used to design and optimize a U-Net surrogate architecture. The model is trained using distributed data parallelism via PyTorch, addressing scalability and computational efficiency challenges inherent in large-scale deep learning workflows. The target application focuses on forecasting odor plumes from a wastewater treatment plant within a densely built urban area in eastern Spain, covering a $\sim$2 $\times$ 1 km domain across 120 meteorological scenarios. Our results demonstrate that coupling advanced surrogate modeling with optimized distributed training pipelines can significantly accelerate CFD surrogate deployment while maintaining predictive fidelity. This work provides a scalable, reproducible framework for real-time urban microclimate and environmental impact assessment, bridging the gap between high-fidelity physics-based simulations and operational machine learning systems.
 
-REFERENCE
+# REFERENCE
+To be updated 
